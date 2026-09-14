@@ -8,13 +8,13 @@
 from textattack import Attack
 from textattack.constraints.pre_transformation import RepeatModification
 from textattack.goal_functions import UntargetedClassification
-from textattack.search_methods import BFSTestHouDMod46
-from textattack.search_methods.bfs_test_houd2_46 import WordSwapWordNetEmbeddingSwitch
+from textattack.search_methods import pceo
+from textattack.search_methods.pceo import WordSwapWordNetEmbeddingSwitch
 
 from .attack_recipe import AttackRecipe
 
 
-class BFSTuPriorWIRHouDMod46(AttackRecipe):
+class pceo(AttackRecipe):
     """Controlled fusion recipe for experiment 46."""
 
     @staticmethod
